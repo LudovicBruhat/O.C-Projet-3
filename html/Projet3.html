@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Bicloo - Location de Vélo à Nantes</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../bootstrap-4.3.1-dist/js/bootstrap.min.js">
+
+  <!-- Fichiers de styles -->
+  <link href="../bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="../bootstrap-4.3.1-dist/js/bootstrap.js">
   <link href="../css/Projet3.css" rel="stylesheet">
-  <title>Document</title>
+
+  <!-- Fichiers de fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700i&display=swap" rel="stylesheet">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
+
+<div class="container-fluid">
+
+  <!-- HEADER AVEC LOGO -->
+  <header>
+    <div class="row">
+          <img class="col-sm-2" id="logo" src="../images/LogoBicloo400x400.jpg" alt="Logo Bicloo">
+          <h1 class="col-sm-10">Location de vélo à Nantes</h1>
+    </div>
+  </header> 
+  
+  <div class="row">
+    <div class="col-sm-12" id="slideshow">
+
+        <div id="slides">
+            <div class="slide showing">Slide 1
+              <!-- <img src=""> -->
+            </div>
+            <div class="slide">Slide 2
+              <!-- <img src=""> -->
+            </div>
+            <div class="slide">Slide 3
+              <!-- <img src=""> -->
+            </div>
+            <div class="slide">Slide 4
+
+            </div>
+            <div class="slide">Slide 5
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="">&#10094;</a>
+            <a class="next" onclick="">&#10095;</a>
+        </div>
+  </div>
+
+<!-- FIN DE DIV CONTAINER -->
+</div>
 
 <!-- **INSERTION DES SCRIPT EN FIN DE DOCUMENT** -->
   <script
@@ -17,6 +67,9 @@
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous">
   </script>
+  <script src="../bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+  <script src="../bootstrap-4.3.1-dist/css/bootstrap.css"></script>
   <script src="../js/projet3.js"></script>
+  <script src="../js/diaporama.js"></script>
 </body>
 </html>

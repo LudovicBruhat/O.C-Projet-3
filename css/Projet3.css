@@ -1,0 +1,111 @@
+
+header {
+  background:#FDFDFD;
+  border: 5px solid red;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+  margin: auto;
+  text-align: center;
+  color: blue;
+}
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slideshow {
+  margin: 0;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  max-height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+  .slide > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+
+/* controle du slideshow */
+.prev, .next {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left : 0;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide {
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+
+.slide:nth-of-type(1) {
+  background: red;
+}
+.slide:nth-of-type(2) {
+  background: orange;
+}
+.slide:nth-of-type(3) {
+  background: green;
+}
+.slide:nth-of-type(4) {
+  background: blue;
+}
+.slide:nth-of-type(5) {
+  background: purple;
+}
